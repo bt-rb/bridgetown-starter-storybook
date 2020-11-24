@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storybook</title>
+    <link rel="stylesheet" href="{{ site.url }}{% webpack_path css %}" />
+    <script src="{{ site.url }}{% webpack_path js %}" defer></script>
+  </head>
+  <body>
+    {% component_previews %}
+  </body>
+</html>

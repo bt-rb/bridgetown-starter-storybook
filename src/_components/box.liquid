@@ -1,0 +1,23 @@
+---
+name: Box
+description: The site navigation bar.
+---
+<div class="Box">
+  {%- if box_header -%}
+  <div class="Box-header">
+    <h3 class="Box-title">
+      {{ box_header }}
+    </h3>
+  </div>
+  {%- endif -%}
+  {%- if box_body -%}
+  <div class="Box-body">
+    {{ box_body }}
+  </div>
+  {%- endif -%}
+  {%- if box_footer -%}
+  <div class="Box-footer">
+    {{ box_footer }}
+  </div>
+  {%- endif -%}
+</div>
